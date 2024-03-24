@@ -102,6 +102,9 @@ npm start
 ```
 
 Open a new terminal window and run your app on an Android emulator or a connected device:
+```bash
+adb devices
+```
 
 ```bash
 npx react-native run-android
