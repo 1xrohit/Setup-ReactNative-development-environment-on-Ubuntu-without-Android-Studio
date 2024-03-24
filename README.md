@@ -13,7 +13,8 @@ Before proceeding with the setup, ensure that the following prerequisites are me
 ## Steps to Setup React Native without Android Studio
 
 ### Step 1: Install Node.js and npm
-**Not:e nodejs version should be v.21**
+**Note: nodejs version should be v.21**
+
 You can install Node.js and npm using the following commands:
 
 ```bash
