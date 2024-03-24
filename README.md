@@ -118,5 +118,5 @@ Refer to the [React Native documentation](https://reactnative.dev/docs/environme
 
 ## Social MEDIA LINKS
 I hope you've found this guide helpful
-Follow me on [Twitter] (https://x.com/1xrohit) for more.
+Follow me on [Twitter](https://x.com/1xrohit) for more tips.
 
