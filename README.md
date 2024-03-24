@@ -13,14 +13,17 @@ Before proceeding with the setup, ensure that the following prerequisites are me
 ## Steps to Setup React Native without Android Studio
 
 ### Step 1: Install Node.js and npm
-
+**Not:e nodejs version should be v.21**
 You can install Node.js and npm using the following commands:
 
 ```bash
 sudo apt update
-sudo apt install nodejs
-sudo apt install npm
+curl -sL https://deb.nodesource.com/setup_21.x | sudo -E bash -
+
+sudo apt install -y nodejs
 ```
+
+
 
 Verify the installation using:
 
@@ -34,7 +37,7 @@ npm -v
 Install the Java Development Kit (JDK) using:
 
 ```bash
-sudo apt install default-jdk
+sudo apt install openjdk-17-jdk
 ```
 
 Verify the installation using:
@@ -47,12 +50,19 @@ java -version
 
 Instead of installing Android Studio, we'll install the Android SDK separately. Follow these steps:
 
-1. Download the [Android Command Line Tools](https://developer.android.com/studio#command-tools) from the official Android website.
-2. Extract the downloaded archive to a suitable location on your system.
-3. Add the Android SDK tools directory to your system PATH. You can do this by adding the following line to your `.bashrc` or `.bash_profile` file:
+1. Download the custom [Android Command Line Tools](https://github.com/1xrohit/Setup-ReactNative-on-Ubuntu-without-Android-Studio/releases/download/AndroidSDK/Android.zip)
+2. Extract the downloaded archive to a suitable location on your system. eg path:  home/user/Android/
+3. Add the Android SDK tools directory to your system PATH. You can do this by adding the following line to your `.bashrc`  file:
 
 ```bash
-export PATH=$PATH:/path/to/android-sdk/tools:/path/to/android-sdk/platform-tools
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+
 ```
 
 Replace `/path/to/android-sdk` with the actual path where you extracted the Android SDK.
@@ -72,7 +82,7 @@ npm install -g react-native-cli
 Create a new React Native project using the following command:
 
 ```bash
-react-native init MyReactNativeApp
+npx react-native init MyReactNativeApp
 ```
 
 Replace `MyReactNativeApp` with your desired project name.
