@@ -1,4 +1,4 @@
-# Setup React Native development environmenton Linux / Ubuntu without Android Studio 2024
+# Setup React Native development environment on Linux / Ubuntu without Android Studio 2024
 
 This guide outlines the process of setting up React Native development environment on Linux or Ubuntu without relying on Android Studio and EXPO. This setup is particularly useful for developers who prefer minimalistic installations or have specific requirements for their development environment.
 
