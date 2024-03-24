@@ -104,7 +104,7 @@ npm start
 Open a new terminal window and run your app on an Android emulator or a connected device:
 
 ```bash
-react-native run-android
+npx react-native run-android
 ```
 
 Congratulations! You have successfully set up React Native on Linux or Ubuntu without relying on Android Studio.
